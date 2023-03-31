@@ -1,0 +1,35 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+  color: $white;
+  background-color: $blue_200;
+  cursor: pointer;
+  word-break: break-word;
+  min-height: 58px;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+}
+
+.button:hover {
+  background-color: $blue_300;
+}
+
+.button:active {
+  background-color: $blue_400;
+
+  .button__text {
+    opacity: 0.3;
+  }
+}
+
+.button:disabled {
+  background-color: $grey_300;
+}

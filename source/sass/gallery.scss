@@ -1,0 +1,15 @@
+.gallery__foto {
+  display: grid;
+
+   @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    padding-right: 60px;
+    padding-left: 60px;
+    justify-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+  }
+}

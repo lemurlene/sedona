@@ -1,0 +1,175 @@
+.features {
+  text-align: center;
+}
+
+.features__intro {
+  max-width: 485px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 680px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 780px;
+  }
+}
+
+.features__heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: $black;
+  margin: 32px 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin: 44px 0 32px;
+  }
+}
+
+.features__text {
+  margin-bottom: 11px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: features;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.features__item {
+  counter-increment: features;
+}
+
+.features__item-illustrated {
+  color: $white;
+  background-color: $blue_200;
+  display: grid;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .features__item-illustrated:first-child {
+    background-image: url("../img/decor/mask-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 45px;
+  }
+}
+
+.features__item-illustrated-wrap {
+  padding: 15px 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 32px 0px 32px;
+  }
+}
+
+
+.features__item-illustrated--town::after,
+.features__item-illustrated--bridge::after {
+  display: block;
+  content: "";
+  height: 260px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+    height: 256px;
+  }
+}
+
+.features__item-illustrated--town::after {
+  background-image: url("../img/background/photo-city@1x 1.jpg");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/background/photo-city@1x.jpg");
+  }
+}
+
+.features__item-illustrated--bridge::after {
+  background-image: url("../img/background/photo-bridge@1x 1.jpg");
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    background-image: url("../img/background/photo-bridge@1x.jpg");
+  }
+}
+
+.features__item-simple {
+  background-color: $grey_100;
+  padding: 20px;
+  @media (min-width: $tablet-width) {
+  padding: 20px 32px;
+  }
+}
+.features__item-simple + .features__item-simple {
+  padding-left: 52px;
+}
+
+@media (max-width: $mobile-width) {
+  .features__item-simple:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: $grey_600;
+    left: 20px;
+    right: 20px;
+  }
+}
+
+.features__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    width: 155px;
+    margin: auto;
+  }
+}
+
+.features__title-illustrated {
+  color: $white;
+}
+
+.features__description {
+  line-height: 21px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 12px;
+  }
+}
+
+.features__description::before {
+  display: block;
+  content: "— №" counter(features) " —";
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.features__town {
+  grid-column: 1 / -1;
+  order: 3;
+}

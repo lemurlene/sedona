@@ -1,0 +1,33 @@
+.page-footer {
+  text-align: center;
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+.page-footer__hashtag {
+  font-size: 21px;
+  font-weight: 700;
+  color: $black;
+  margin: auto;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: $black;
+}
+
+.page-footer__copyright:hover {
+  color: $blue_200;
+}
+
+.page-footer__copyright:active {
+  opacity: 0.3;
+}

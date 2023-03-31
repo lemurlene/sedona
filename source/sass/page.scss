@@ -1,0 +1,48 @@
+.page {
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.page__body {
+  min-width: 320px;
+  margin: 0;
+  color: $grey_800;
+  background-color: $grey_200;
+}
+
+.page__wrapper {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 320px;
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $white;
+  box-shadow: 0 5px 15px rgba($grey_900, 0.2);
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.page__inner {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}

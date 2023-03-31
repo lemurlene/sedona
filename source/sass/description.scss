@@ -1,0 +1,20 @@
+.description {
+  text-align: center;
+  padding: 20px;
+  max-width: 485px;
+  margin: auto;
+}
+
+.description__title {
+  font-weight: 700;
+  font-size: 18px;
+  color: $black;
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.description__text {
+  line-height: 24px;
+}
