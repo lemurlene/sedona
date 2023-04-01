@@ -11,7 +11,7 @@
 
   <body class="page__body">
     <svg style="display: none">
-      <symbol id="html-academy" viewBox="0 0 27 35">
+      <symbol id="         " viewBox="0 0 27 35">
         <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
             fill="currentColor"/>
       </symbol>
@@ -22,14 +22,13 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop.svg" width="187" height="96">
             <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="102" height="84">
-            <img class="page-header__logo-img" src="img/logo/logo-mobile.svg" width="102" height="84" alt="На главную">
+            <img class="page-header__logo-img" src="img/logo/logo-mobile.svg" width="102" height="84">
           </picture>
         </a>
         <nav class="page-header__nav main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+          <button class="main-nav__toggle" type="button" aria-expanded="true" aria-controls="main-nav__list" aria-label="Закрыть меню"></button>
           </button>
-          <ul class="main-nav__list">
+          <ul class="main-nav__list" id="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link main-nav__link--current">Главная</a>
             </li>
@@ -45,7 +44,9 @@
           </ul>
         </nav>
         <div class="page-header__foto page-header__foto--main">
-          <img class="page-header__welcome"src="img/text/welcome.svg" min-width="282" min-height="214" alt="Добро пожаловать в Седону">
+          <svg class="page-header__welcome" min-width="282" min-height="214" role="img" alt="Добро пожаловать в Седону">
+            <use xlink:href="img/sprite.svg#welcome"></use>
+          </svg>
         </div>
       </header>
 
@@ -108,7 +109,7 @@
           <h2 class="visually-hidden">Поиск отеля</h2>
           <p class="search__caption">Заинтересовались?</p>
           <p class="search__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения&nbsp;гостиниц&nbsp;в&nbsp;Cедоне</p>
-          <a class="button search__button" href="">
+          <a class="button search__button" href="https://www.booking.com/city/us/sedona">
             <span class="button__text">Найти гостиницу</span>
           </a>
         </section>
@@ -135,7 +136,7 @@
         <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
           <svg width="27" height="35">
-            <use xlink:href="#html-academy"></use>
+            <use xlink:href="img/sprite.svg#html-academy"></use>
           </svg>
         </a>
       </footer>

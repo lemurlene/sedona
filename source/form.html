@@ -75,13 +75,13 @@
             <legend class="fieldset__title fieldset__title--contacts">Контактная информация:</legend>
 
             <label class="fieldset__label fieldset__label--contacts" for="feedback-phone">
-              <span class="hide hide--desktop">Контактный </span>
+              <span class="hide-show hide-show__hide-desktop">Контактный </span>
               телефон*:
             </label>
-            <input class="fieldset__field fieldset__field--phone" type="text" name="feedback-phone" id="feedback-phone" placeholder="Введите телефон">
+            <input class="fieldset__field fieldset__field--phone" type="tel" inputmode="tel" name="feedback-phone" id="feedback-phone" placeholder="Введите телефон">
 
             <label class="fieldset__label fieldset__label--contacts" for="feedback-mail">Электронная почта*:</label>
-            <input class="fieldset__field fieldset__field--mail" type="text" name="feedback-mail" id="feedback-mail" placeholder="Введите e-mail">
+            <input class="fieldset__field fieldset__field--mail" type="email" inputmode="email" name="feedback-mail" id="feedback-mail" placeholder="Введите e-mail">
 
           </fieldset>
 
@@ -131,7 +131,7 @@
           </fieldset>
 
           <button class="button feedback-form__button" type="submit"><span class="button__text">Отправить отзыв</span></button>
-          <p class="feedback-form__footnote hide hide--mobile">* — обязательные поля</p>
+          <p class="feedback-form__footnote hide-show hide-show__hide-mobile">* — обязательные поля</p>
 
         </form>
       </main>

@@ -46,17 +46,17 @@ a {
   font-display: swap;
 }
 @media (min-width: 1200px) {
-  .hide--desktop {
+  .hide-show__hide-desktop {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  .hide--tablet {
+  .hide-show__hide-tablet {
     display: none;
   }
 }
-@media (max-width: 768px) {
-  .show--tablet {
+@media (max-width: 767px) {
+  .hide-show__hide-mobile {
     display: none;
   }
 }
@@ -240,10 +240,6 @@ a {
   .page-header__sedona {
     margin: 101px 10px 120px;
   }
-}
-
-.logo-desktop {
-  display: none;
 }
 
 .main-nav {
@@ -502,10 +498,6 @@ a {
   .features__item-simple {
     padding: 20px 32px;
   }
-}
-
-.features__item-simple + .features__item-simple {
-  padding-left: 52px;
 }
 
 @media (max-width: 767px) {
@@ -1101,6 +1093,10 @@ a {
 .selector__input:active:checked::after {
   opacity: 0.3;
 }
+.selector__input:disabled::before {
+  background-color: #fcfcfc;
+  cursor: not-allowed;
+}
 
 .selector__input--radio::before {
   border-radius: 50%;
@@ -1242,6 +1238,11 @@ a {
 .foto__likes-number {
   display: block;
   font-weight: 700;
+}
+
+.foto__likes--love,
+.foto__likes-number--love {
+  color: #5496bd;
 }
 
 .video__player {

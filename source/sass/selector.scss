@@ -44,6 +44,10 @@
   &:active:checked::after {
     opacity: 0.3;
   }
+  &:disabled::before {
+    background-color:  $grey_50;
+    cursor: not-allowed;
+  }
 }
 
 .selector__input--radio::before {

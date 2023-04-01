@@ -117,9 +117,6 @@
   padding: 20px 32px;
   }
 }
-.features__item-simple + .features__item-simple {
-  padding-left: 52px;
-}
 
 @media (max-width: $mobile-width) {
   .features__item-simple:not(:last-child)::after {

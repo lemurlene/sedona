@@ -1,17 +1,17 @@
 @media (min-width: $desktop-width) {
-  .hide--desktop {
+  .hide-show__hide-desktop {
     display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .hide--tablet {
+  .hide-show__hide-tablet {
     display: none;
   }
 }
 
-@media (max-width: $tablet-width) {
-  .show--tablet {
+@media (max-width: $mobile-width) {
+  .hide-show__hide-mobile {
     display: none;
   }
 }
