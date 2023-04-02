@@ -14,36 +14,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.social__link:hover {
+  &:hover {
   background-color: $blue_300;
-}
-
-.social__link:active {
+  }
+  &:active {
   background-color: $blue_400;
+  }
 }
 
-.social__link::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
+.social__icon {
   background-position: center;
-}
-
-.social__link:active::before {
+  &:active {
   opacity: 0.3;
-}
-
-.social__link--twitter::before {
-  background-image: url("../img/icon/twitter.svg");
-}
-
-.social__link--facebook::before {
-  background-image: url("../img/icon/facebook.svg");
-}
-
-.social__link--youtube::before {
-  background-image: url("../img/icon/youtube.svg");
+  }
 }
