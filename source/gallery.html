@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Sedona</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
@@ -10,12 +10,10 @@
 
   <body class="page__body">
     <svg style="display: none">
-
       <symbol id="like-icon" viewBox="0 0 23 21">
         <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
           fill="currentColor"/>
       </symbol>
-
       <symbol id="replay" viewBox="0 0 16 20">
         <path d="M8 4V0L3 5L8 10V6C11.3 6 14 8.7 14 12C14 15.3 11.3 18 8 18C4.7 18 2 15.3 2 12H0C0 16.4 3.6 20 8 20C12.4 20 16 16.4 16 12C16 7.6 12.4 4 8 4Z"/>
       </symbol>
@@ -30,11 +28,6 @@
           <path d="M17 17H14V20H17H20V17V14H17V17Z"/>
         </g>
         </symbol>
-
-      <symbol id="     " viewBox="0 0 27 35">
-        <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
-            fill="currentColor"/>
-      </symbol>
     </svg>
     <div class="page__wrapper">
       <header class="page-header">
@@ -64,8 +57,10 @@
             </li>
           </ul>
         </nav>
-        <div class="page-header__foto page-header__foto--not_main">
-          <img class="page-header__sedona"src="img/text/sedona.svg" min-width="250" min-height="40" alt="Седонa">
+        <div class="page-header__foto page-header__foto--not_main" aria-hidden="true">
+          <svg class="page-header__sedona" width="230" height="40">
+            <use xlink:href="img/sprite.svg#sedona"></use>
+          </svg>
         </div>
       </header>
 
@@ -81,9 +76,19 @@
           <figure class="foto__figure">
             <a href="">
               <picture>
-                <source media="(min-width: 688px)" srcset="img/foto/spaces-tablet.jpg, img/foto/spaces-tablet@2x.jpg">
-                <source media="(min-width: 321px)" srcset="img/foto/spaces-mobile-big.jpg, img/foto/spaces-mobile-big@2x.jpg">
-                <img src="img/foto/spaces-mobile.jpg" srcset="img/foto/spaces-mobile@2x.jpg" min-width="280" min-height="280" alt="Пустынная дорога к скалам на горизонте">
+                <source type="image/webp" media="(min-width: 688px)"
+                  srcset="img/foto/spaces-tablet.webp 1x, img/foto/spaces-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 321px)"
+                  srcset="img/foto/spaces-mobile-big.webp 1x, img/foto/spaces-mobile-big@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/foto/spaces-mobile.webp 1x, img/foto/spaces-mobile@2x.webp 2x">
+
+                <source media="(min-width: 688px)"
+                  srcset="img/foto/spaces-tablet.jpg 1x, img/foto/spaces-tablet@2x.jpg 2x">
+                <source media="(min-width: 321px)"
+                  srcset="img/foto/spaces-mobile-big.jpg 1x, img/foto/spaces-mobile-big@2x.jpg 2x">
+                <img src="img/foto/spaces-mobile.jpg"
+                  srcset="img/foto/spaces-mobile@2x.jpg 2x" width="280" height="280" alt="Пустынная дорога к скалам на горизонте">
               </picture>
             </a>
             <figcaption class="foto__caption">
@@ -100,8 +105,14 @@
           <figure class="foto__figure">
             <a href="">
               <picture>
-                <source media="(min-width: 321px)" srcset="img/foto/cactus-tablet.jpg, img/foto/cactus-tablet2@.jpg">
-                <img src="img/foto/cactus.jpg" srcset="img/foto/cactus2@.jpg" min-width="280" min-height="280" alt="Цветущие кактусы на фоне красных скал">
+                <source type="image/webp" media="(min-width: 321px)"
+                  srcset="img/foto/cactus-tablet.webp 1x, img/foto/cactus-tablet2@.webp 2x">
+                <source type="image/webp"
+                  srcset="img/foto/cactus.webp 1x, img/foto/cactus2@.webp 2x">
+                <source media="(min-width: 321px)"
+                  srcset="img/foto/cactus-tablet.jpg 1x, img/foto/cactus-tablet2@.jpg 2x">
+                <img src="img/foto/cactus.jpg"
+                  srcset="img/foto/cactus2@.jpg 2x" width="280" height="280" alt="Цветущие кактусы на фоне красных скал">
               </picture>
             </a>
             <figcaption class="foto__caption">
@@ -118,8 +129,14 @@
           <figure class="foto__figure">
             <a href="">
               <picture>
-                <source media="(min-width: 321px)" srcset="img/foto/road-tablet.jpg, img/foto/road-tablet2@.jpg">
-                <img src="img/foto/road.jpg" srcset="img/foto/road2@.jpg" min-width="280" min-height="280" alt="Серпантинная дорога с соснами и елями">
+                <source type="image/webp" media="(min-width: 321px)"
+                  srcset="img/foto/road-tablet.webp 1x, img/foto/road-tablet2@.webp 2x">
+                <source type="image/webp"
+                  srcset="img/foto/road.webp 1x, img/foto/road2@.webp 2x">
+                <source media="(min-width: 321px)"
+                  srcset="img/foto/road-tablet.jpg 1x, img/foto/road-tablet2@.jpg 2x">
+                <img src="img/foto/road.jpg"
+                  srcset="img/foto/road2@.jpg 2x" width="280" height="280" alt="Цветущие кактусы на фоне красных скал">
               </picture>
             </a>
             <figcaption class="foto__caption">
@@ -136,8 +153,14 @@
           <figure class="foto__figure">
             <a href="">
               <picture>
-                <source media="(min-width: 321px)" srcset="img/foto/bridge-tablet.jpg, img/foto/bridge-tablet2@.jpg">
-                <img src="img/foto/bridge.jpg" srcset="img/foto/bridge2@.jpg" min-width="280" min-height="280" alt="Скальная арка-перешеек над землёй">
+                <source type="image/webp" media="(min-width: 321px)"
+                  srcset="img/foto/bridge-tablet.webp 1x, img/foto/bridge-tablet2@.webp 2x">
+                <source type="image/webp"
+                  srcset="img/foto/bridge.webp 1x, img/foto/bridge2@.webp 2x">
+                <source media="(min-width: 321px)"
+                  srcset="img/foto/road-tablet.jpg 1x, img/foto/bridge-tablet2@.jpg 2x">
+                <img src="mg/foto/bridge.jpg"
+                  srcset="img/foto/bridge2@.jpg 2x" width="280" height="280" alt="Скальная арка-перешеек над землёй">
               </picture>
             </a>
             <figcaption class="foto__caption">
@@ -160,9 +183,19 @@
           <div class="video__player">
             <a href="">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/foto/video-desktop.jpg, img/foto/video-desktop2@.jpg">
-                <source media="(min-width: 321px)" srcset="img/foto/video-tablet.jpg, img/foto/video-tablet2@.jpg">
-                <img class="video__picture" src="img/foto/video-mobile.jpg" srcset="img/foto/video-mobile2@.jpg" min-width="320" min-height="200">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/foto/video-desktop.webp 1x, img/foto/video-desktop2@.webp 2x">
+                <source type="image/webp" media="(min-width: 321px)"
+                  srcset="img/foto/video-tablet.webp 1x, iimg/foto/video-tablet2@.webp 2x">
+                <source type="image/webp"
+                  srcset="img/foto/video-mobile.webp 1x, img/foto/video-mobile2@.webp 2x">
+
+                <source media="(min-width: 768px)"
+                  srcset="iimg/foto/video-desktop.jpg 1x, img/foto/video-desktop2@.jpg 2x">
+                <source media="(min-width: 321px)"
+                  srcset="img/foto/video-tablet.jpg 1x, img/foto/video-tablet2@.jpg 2x">
+                <img src="img/foto/video-mobile.jpg"
+                  srcset="img/foto/video-mobile2@.jpg 2x" width="280" height="280" alt="">
               </picture>
             </a>
             <div class="video__controls control">

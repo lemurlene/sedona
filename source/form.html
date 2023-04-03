@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Sedona</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
@@ -37,8 +37,10 @@
             </li>
           </ul>
         </nav>
-        <div class="page-header__foto page-header__foto--not_main">
-          <img class="page-header__sedona"src="img/text/sedona.svg" min-width="250" min-height="40" alt="Седонa">
+        <div class="page-header__foto page-header__foto--not_main" aria-hidden="true">
+          <svg class="page-header__sedona" width="230" height="40">
+            <use xlink:href="img/sprite.svg#sedona"></use>
+          </svg>
         </div>
       </header>
 

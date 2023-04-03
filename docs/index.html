@@ -16,7 +16,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop.svg" width="187" height="96">
             <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="102" height="84">
-            <img class="page-header__logo-img" src="img/logo/logo-mobile.svg" width="102" height="84">
+            <img class="page-header__logo-img" src="img/logo/logo-mobile.svg" width="102" height="84" alt="">
           </picture>
         </a>
         <nav class="page-header__nav main-nav">
@@ -38,8 +38,8 @@
             </li>
           </ul>
         </nav>
-        <div class="page-header__foto page-header__foto--main">
-          <svg class="page-header__welcome" min-width="282" min-height="214" role="img" alt="Добро пожаловать в Седону">
+        <div class="page-header__foto page-header__foto--main" aria-hidden="true">
+          <svg class="page-header__welcome" width="282" height="214">
             <use xlink:href="img/sprite.svg#welcome"></use>
           </svg>
         </div>
