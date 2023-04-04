@@ -40,9 +40,9 @@
         </a>
         <nav class="page-header__nav main-nav">
           <button class="main-nav__toggle" type="button" aria-expanded="true" aria-controls="main-nav__list">
-            <span class="visually-hidden main-nav__toggle--label">Закрыть меню</span>
+            <span class="visually-hidden main-nav__toggle-label">Закрыть меню</span>
           </button>
-          <ul class="main-nav__list">
+          <ul class="main-nav__list" id="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
@@ -67,12 +67,13 @@
       <main class="gallery">
         <h1 class="visually-hidden">Фото и видео галерея</h1>
         <div class="description">
-          <h2 class="description__title">Фото и видео</h2>
+          <p class="description__title">Фото и видео</p>
           <p class="description__text">Не можете решиться на путешествие из&#8209;за курса?
           Фотографии помогут вам забыть о политике и экономике.
           </p>
         </div>
-        <div class="gallery__foto foto">
+        <section class="gallery__foto foto">
+          <h2 class="visually-hidden">Фотогалерея</h2>
           <figure class="foto__figure">
             <a href="">
               <picture>
@@ -174,14 +175,15 @@
               </button>
             </figcaption>
           </figure>
-        </div>
-        <div class="gallery__video video">
+        </section>
+        <section class="gallery__video video">
+          <h2 class="visually-hidden">Видеогалерея</h2>
           <div class="description">
             <p class="description__title">Все еще сомневаетесь?</p>
             <p class="description__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="video__player">
-            <a href="">
+            <a href="" aria-hidden="true">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/foto/video-desktop.webp 1x, img/foto/video-desktop2@.webp 2x">
@@ -194,32 +196,32 @@
                   srcset="iimg/foto/video-desktop.jpg 1x, img/foto/video-desktop2@.jpg 2x">
                 <source media="(min-width: 321px)"
                   srcset="img/foto/video-tablet.jpg 1x, img/foto/video-tablet2@.jpg 2x">
-                <img src="img/foto/video-mobile.jpg"
+                <img class="video__picture" src="img/foto/video-mobile.jpg"
                   srcset="img/foto/video-mobile2@.jpg 2x" width="280" height="280" alt="">
               </picture>
             </a>
             <div class="video__controls control">
               <div class="control__scale">
-                <input class="control__scale-input" type="range" aria-pressed="true" min="0" max="100" value="15" name="control__scale" step="1"/>
+                <input class="control__scale-input" type="range" min="0" max="100" value="15" name="control__scale" step="1">
               </div>
-              <button class="control__button control__button--replay" type="button" aria-pressed="true">
+              <button class="control__button control__button--replay" type="button" aria-pressed="false">
                 <svg class="control__button-icon" width="16" height="20" fill="#5C6870">
                   <use xlink:href="#replay"></use>
                 </svg>
               </button>
-              <button class="control__button control__button--subtitles" type="button" aria-pressed="true">
+              <button class="control__button control__button--subtitles" type="button" aria-pressed="false">
                 <svg class="control__button-icon" width="32" height="20" fill="#5C6870">
                   <use xlink:href="#subtitles"></use>
                 </svg>
               </button>
-              <button class="control__button control__button--fullscreen" type="button" aria-pressed="true">
+              <button class="control__button control__button--fullscreen" type="button" aria-pressed="false">
                 <svg class="control__button-icon" width="20" height="20" fill="#5C6870">
                   <use xlink:href="#fullscreen"></use>
                 </svg>
               </button>
             </div>
           </div>
-        </div>
+        </section>
       </main>
       <footer class="page-footer page__inner">
         <p class="page-footer__hashtag">#visitSedona</p>

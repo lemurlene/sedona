@@ -10,7 +10,7 @@
   }
 }
 
-.foto__figure:first-child {
+.foto__figure:first-of-type {
   border-top: 1px solid $grey_300;
 
   @media (min-width: $tablet-width) {
