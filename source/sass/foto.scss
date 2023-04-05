@@ -43,7 +43,7 @@
 }
 
 
-.foto__figure:nth-child(2n+3) .foto__caption {
+.foto__figure:nth-of-type(2n+3) .foto__caption {
   @media (min-width: $tablet-width) {
     background-color: $grey_250;
   }
@@ -52,7 +52,7 @@
   }
 }
 
-.foto__figure:nth-child(even) {
+.foto__figure:nth-of-type(even) {
   @media (min-width: $tablet-width) {
     justify-self: flex-end;
   }
