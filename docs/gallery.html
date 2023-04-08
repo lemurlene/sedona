@@ -27,7 +27,7 @@
           <path d="M17 0H14V3H17V6H20V3V0H17Z"/>
           <path d="M17 17H14V20H17H20V17V14H17V17Z"/>
         </g>
-        </symbol>
+      </symbol>
     </svg>
     <div class="page__wrapper">
       <header class="page-header">
@@ -96,9 +96,11 @@
               Неродные просторы
               <p class="foto__author">Автор фото: Борис</p>
               <button class="foto__likes" type="button" aria-pressed="false">
-                <svg class="foto__likes-icon" width="23" height="21">
+                <span class="visually-hidden foto__likes-label">Поставить лайк</span>
+                <svg class="foto__likes-icon" width="23" height="21" aria-hidden="true">
                   <use xlink:href="#like-icon"></use>
                 </svg>
+                <span class="visually-hidden">Стоит лайков</span>
                 <span class="foto__likes-number">1350</span>
               </button>
             </figcaption>
@@ -120,9 +122,11 @@
               Местная растительность
               <p class="foto__author">Автор фото: Сергей</p>
               <button class="foto__likes" type="button" aria-pressed="false">
+                <span class="visually-hidden foto__likes-label">Поставить лайк</span>
                 <svg class="foto__likes-icon" width="23" height="21">
                   <use xlink:href="#like-icon"></use>
                 </svg>
+                <span class="visually-hidden">Стоит лайков</span>
                 <span class="foto__likes-number">143</span>
               </button>
             </figcaption>
@@ -144,9 +148,11 @@
               Дорога на север
               <p class="foto__author">Автор фото: Петр</p>
               <button class="foto__likes" type="button" aria-pressed="false">
+                <span class="visually-hidden foto__likes-label">Поставить лайк</span>
                 <svg class="foto__likes-icon" width="23" height="21">
                   <use xlink:href="#like-icon"></use>
                 </svg>
+                <span class="visually-hidden">Стоит лайков</span>
                 <span class="foto__likes-number">96</span>
               </button>
             </figcaption>
@@ -168,9 +174,11 @@
               Мост дьявола
               <p class="foto__author">Автор фото: Антон</p>
               <button class="foto__likes" type="button" aria-pressed="false">
+                <span class="visually-hidden foto__likes-label">Поставить лайк</span>
                 <svg class="foto__likes-icon" width="23" height="21">
                   <use xlink:href="#like-icon"></use>
                 </svg>
+                <span class="visually-hidden">Стоит лайков</span>
                 <span class="foto__likes-number">254</span>
               </button>
             </figcaption>
@@ -202,20 +210,21 @@
             </a>
             <div class="video__controls control">
               <div class="control__scale">
-                <input class="control__scale-input" type="range" min="0" max="100" value="15" name="control__scale" step="1">
+                <label class="visually-hidden" for="control__scale">Ползунок перемотки видео</label>
+                <input class="control__scale-input" id="control__scale" type="range" min="0" max="100" value="15" name="control__scale" step="1">
               </div>
-              <button class="control__button control__button--replay" type="button" aria-pressed="false">
-                <svg class="control__button-icon" width="16" height="20" fill="#5C6870">
+              <button class="control__button control__button--replay" type="button" aria-pressed="false" aria-label="Повторить">
+                <svg class="control__button-icon" width="16" height="20" fill="#5C6870" aria-hidden="true">
                   <use xlink:href="#replay"></use>
                 </svg>
               </button>
-              <button class="control__button control__button--subtitles" type="button" aria-pressed="false">
-                <svg class="control__button-icon" width="32" height="20" fill="#5C6870">
+              <button class="control__button control__button--subtitles" type="button" aria-pressed="false" aria-label="Субтитры">
+                <svg class="control__button-icon" width="32" height="20" fill="#5C6870" aria-hidden="true">
                   <use xlink:href="#subtitles"></use>
                 </svg>
               </button>
-              <button class="control__button control__button--fullscreen" type="button" aria-pressed="false">
-                <svg class="control__button-icon" width="20" height="20" fill="#5C6870">
+              <button class="control__button control__button--fullscreen" type="button" aria-pressed="false" aria-label="Полный экран">
+                <svg class="control__button-icon" width="20" height="20" fill="#5C6870" aria-hidden="true">
                   <use xlink:href="#fullscreen"></use>
                 </svg>
               </button>
@@ -248,9 +257,9 @@
             </a>
           </li>
         </ul>
-        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html-academy">
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
-          <svg width="27" height="35" aria-hidden="true">
+          <svg width="27" height="35" aria-label="html-academy">
             <use xlink:href="img/sprite.svg#html-academy"></use>
           </svg>
         </a>

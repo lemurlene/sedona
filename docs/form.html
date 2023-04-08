@@ -50,19 +50,19 @@
           <h2 class="description__title">Оставьте свой отзыв</h2>
           <p class="description__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посещенных Вами достопримечательностях</p>
         </div>
-        <form class="feedback__form feedback-form" id="feedback__form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="feedback__form feedback-form hide-show" id="feedback__form" action="https://echo.htmlacademy.ru" method="get">
 
           <fieldset class="feedback__fieldset fieldset feedback__fieldset--introduce">
             <legend class="fieldset__title fieldset__title--introduce">Представьтесь:</legend>
             <ul class="fieldset__list">
               <li class="fieldset__item">
                 <label class="fieldset__label">Имя*:
-                  <input class="fieldset__field" type="text" name="feedback-name" id="feedback-name" placeholder="Антон">
+                  <input class="fieldset__field" type="text" name="feedback-name" id="feedback-name" placeholder="Петр" aria-label="Обязательное поле">
                 </label>
               </li>
               <li class="fieldset__item">
                 <label class="fieldset__label">Фамилия*:
-                  <input class="fieldset__field" type="text" name="feedback-surname" id="feedback-surname" placeholder="Иванов">
+                  <input class="fieldset__field" type="text" name="feedback-surname" id="feedback-surname" placeholder="Иванов" aria-label="Обязательное поле">
                 </label>
               </li>
               <li class="fieldset__item">
@@ -77,13 +77,13 @@
             <legend class="fieldset__title fieldset__title--contacts">Контактная информация:</legend>
 
             <label class="fieldset__label fieldset__label--contacts" for="feedback-phone">
-              <span class="hide-show hide-show__hide-desktop">Контактный </span>
+              <span class="hide-show__hide-desktop">Контактный </span>
               телефон*:
             </label>
-            <input class="fieldset__field fieldset__field--phone" type="tel" inputmode="tel" name="feedback-phone" id="feedback-phone" placeholder="Введите телефон">
+            <input class="fieldset__field fieldset__field--phone" type="tel" inputmode="tel" name="feedback-phone" id="feedback-phone" placeholder="Введите телефон" aria-label="Обязательное поле">
 
             <label class="fieldset__label fieldset__label--contacts" for="feedback-mail">Электронная почта*:</label>
-            <input class="fieldset__field fieldset__field--mail" type="email" inputmode="email" name="feedback-mail" id="feedback-mail" placeholder="Введите e-mail">
+            <input class="fieldset__field fieldset__field--mail" type="email" inputmode="email" name="feedback-mail" id="feedback-mail" placeholder="Введите e-mail" aria-label="Обязательное поле">
 
           </fieldset>
 
@@ -127,13 +127,13 @@
             </ul>
           </fieldset>
 
-          <fieldset class="feedback__fieldset fieldset feedback__fieldset--emotions">
-            <legend class="fieldset__title fieldset__title--emotions" for="emotions-text ">Опишите свои эмоции:</legend>
+          <div class="feedback__fieldset fieldset feedback__fieldset--emotions">
+            <label class="fieldset__title fieldset__title--emotions" for="emotions-text">Опишите свои эмоции:</label>
             <textarea class="fieldset__field fieldset__field--emotions" name="emotions-text" id="emotions-text" placeholder="Опишите подробно все свои восторги"></textarea>
-          </fieldset>
+          </div>
 
           <button class="button feedback-form__button" type="submit"><span class="button__text">Отправить отзыв</span></button>
-          <p class="feedback-form__footnote hide-show hide-show__hide-mobile">* — обязательные поля</p>
+          <p class="feedback-form__footnote hide-show__hide-mobile" aria-hidden="true">* — обязательные поля</p>
 
         </form>
       </main>
@@ -163,20 +163,20 @@
             </a>
           </li>
         </ul>
-        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html-academy">
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
-          <svg width="27" height="35" aria-hidden="true">
+          <svg width="27" height="35" aria-label="html-academy">
             <use xlink:href="img/sprite.svg#html-academy"></use>
           </svg>
         </a>
       </footer>
     </div>
-    <div class="pop-up description pop-up__container pop-up__container--error">
+    <div class="pop-up description pop-up--error">
       <h2 class="description__title">Что-то пошло не&nbsp;так!</h2>
       <p class="description__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="button pop-up__button" type="button" aria-label="Закрыть сообщение">Ок</button>
     </div>
-    <div class="pop-up pop-up__container pop-up__container--sent">
+    <div class="pop-up pop-up--sent">
       <div class="description description--sent">
         <h2 class="description__title">Ваш отзыв отправлен!</h2>
         <p class="description__text">Спасибо за ваше участие, Ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>

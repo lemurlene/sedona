@@ -475,21 +475,41 @@ a {
 }
 
 .features__item-illustrated--town::after {
-  background-image: url("../img/background/photo-city@1x 1.jpg");
+  background-image: url("../img/background/photo-city@1x.jpg");
+}
+@media (min-resolution: 2dppx) {
+  .features__item-illustrated--town::after {
+    background-image: url("../img/background/photo-city@2x.jpg");
+  }
 }
 @media (min-width: 768px) {
   .features__item-illustrated--town::after {
-    background-image: url("../img/background/photo-city@1x.jpg");
+    background-image: url("../img/background/photo-city-tablet@1x.jpg");
+  }
+}
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .features__item-illustrated--town::after {
+    background-image: url("../img/background/photo-city-tablet@2x.jpg");
   }
 }
 
 .features__item-illustrated--bridge::after {
-  background-image: url("../img/background/photo-bridge@1x 1.jpg");
+  background-image: url("../img/background/photo-bridge@1x.jpg");
+}
+@media (min-resolution: 2dppx) {
+  .features__item-illustrated--bridge::after {
+    background-image: url("../img/background/photo-bridge@2x.jpg");
+  }
 }
 @media (min-width: 768px) {
   .features__item-illustrated--bridge::after {
     order: -1;
-    background-image: url("../img/background/photo-bridge@1x.jpg");
+    background-image: url("../img/background/photo-bridge-tablet@1x.jpg");
+  }
+}
+@media (min-resolution: 2dppx) {
+  .features__item-illustrated--bridge::after {
+    background-image: url("../img/background/photo-bridge-tablet@2x.jpg");
   }
 }
 
@@ -1382,7 +1402,7 @@ a {
   border: none;
 }
 
-.pop-up__container {
+.pop-up {
   display: none;
   position: fixed;
   width: 320px;
@@ -1392,11 +1412,11 @@ a {
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 
-.pop-up__container--error {
+.pop-up--error {
   padding: 40px 42px 35px 42px;
 }
 @media (min-width: 768px) {
-  .pop-up__container--error {
+  .pop-up--error {
     width: 400px;
     left: calc(50% - 200px);
     padding: 35px 47px 50px 47px;
@@ -1404,7 +1424,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  .pop-up__container--sent {
+  .pop-up--sent {
     width: 640px;
     left: calc(50% - 320px);
   }

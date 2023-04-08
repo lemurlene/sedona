@@ -94,19 +94,31 @@
 }
 
 .features__item-illustrated--town::after {
-  background-image: url("../img/background/photo-city@1x 1.jpg");
+  background-image: url("../img/background/photo-city@1x.jpg");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/photo-city@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/background/photo-city@1x.jpg");
+    background-image: url("../img/background/photo-city-tablet@1x.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/photo-city-tablet@2x.jpg");
+    }
   }
 }
 
 .features__item-illustrated--bridge::after {
-  background-image: url("../img/background/photo-bridge@1x 1.jpg");
+  background-image: url("../img/background/photo-bridge@1x.jpg");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/photo-bridge@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     order: -1;
-    background-image: url("../img/background/photo-bridge@1x.jpg");
+    background-image: url("../img/background/photo-bridge-tablet@1x.jpg");
+  }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/photo-bridge-tablet@2x.jpg");
   }
 }
 
