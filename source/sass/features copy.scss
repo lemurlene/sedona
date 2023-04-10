@@ -8,8 +8,6 @@
 
   @media (min-width: $tablet-width) {
     max-width: 680px;
-    padding-top: 24px;
-    padding-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,14 +23,14 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-    margin: 21px 10px;
+    margin: 44px 0 32px;
   }
 }
 
 .features__text {
   margin-bottom: 11px;
   @media (min-width: $tablet-width) {
-    margin-top: 30px;
+    margin-bottom: 52px;
   }
 }
 
@@ -45,7 +43,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 15px 0 45px;
   }
 }
 
@@ -73,17 +70,10 @@
 }
 
 .features__item-illustrated-wrap {
-  padding: 22px 12px;
+  padding: 8px 13px;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 32px;
-  }
-}
-
-
-.features__item-illustrated--bridge {
-  .features__item-illustrated-wrap {
-    padding: 35px 12px 20px;
+    padding: 20px 32px 0px 32px;
   }
 }
 
@@ -133,24 +123,20 @@
 
 .features__item-simple {
   background-color: $grey_100;
-  padding: 20px 35px 10px;
-  position: relative;
-
+  padding: 20px;
   @media (min-width: $tablet-width) {
-    min-height: 256px;
-    padding: 20px 35px;
+  padding: 20px 32px;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .features__item-simple + .features__item-simple::before {
+  .features__item-simple:not(:last-child)::after {
     position: absolute;
     content: "";
     height: 1px;
     background-color: $grey_600;
     left: 20px;
     right: 20px;
-    top: 0;
   }
 }
 
@@ -158,11 +144,12 @@
   font-size: 18px;
   font-weight: 700;
   color: $black;
-  margin: 5px 20px 14px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-    margin: 21px 20px 14px;
+    width: 155px;
+    margin: auto;
   }
 }
 
@@ -172,19 +159,21 @@
 
 .features__description {
   line-height: 21px;
+  margin: 0;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-
+    padding-top: 12px;
   }
 }
 
 .features__description::before {
   display: block;
   content: "— №" counter(features) " —";
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 21px;
+    margin-bottom: 23px;
   }
 }
 

@@ -1,11 +1,14 @@
 .page-footer {
-  text-align: center;
-  padding-bottom: 13px;
+  display: grid;
+  padding-top: 10px;
+  padding-bottom: 22px;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding-top: 14px;
   }
 }
 
@@ -13,7 +16,14 @@
   font-size: 21px;
   font-weight: 700;
   color: $black;
-  margin: auto;
+  @media (min-width: $tablet-width) {
+    justify-self: start;
+  }
+}
+
+.page-footer__social {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .page-footer__copyright {
@@ -22,6 +32,10 @@
   align-items: center;
   gap: 15px;
   color: $black;
+  margin-top: 20px;
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+  }
 }
 
 .page-footer__copyright:hover {
