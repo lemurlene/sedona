@@ -1,6 +1,6 @@
 .description {
   text-align: center;
-  padding: 20px;
+  padding: 8px 20px;
   max-width: 485px;
   margin: auto;
 }
@@ -9,6 +9,7 @@
   font-weight: 700;
   font-size: 18px;
   color: $black;
+  margin-bottom: 26px;
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 40px;

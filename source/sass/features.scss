@@ -27,6 +27,9 @@
     font-size: 21px;
     margin: 21px 10px;
   }
+  @media (min-width: $desktop-width) {
+    margin: 32px 10px;
+  }
 }
 
 .features__text {
@@ -45,7 +48,10 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 15px 0 45px;
+    margin: 18px 0 45px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 5px 0 45px;
   }
 }
 
@@ -78,14 +84,25 @@
   @media (min-width: $tablet-width) {
     padding: 20px 32px;
   }
+  @media (min-width: $desktop-width) {
+    margin: 5px 32px;
+  }
 }
-
 
 .features__item-illustrated--bridge {
   .features__item-illustrated-wrap {
     padding: 35px 12px 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 20px 32px;
+    }
+    @media (min-width: $desktop-width) {
+      padding: 25px 55px;
+    }
   }
 }
+
+
 
 .features__item-illustrated--town::after,
 .features__item-illustrated--bridge::after {
@@ -140,6 +157,12 @@
     min-height: 256px;
     padding: 20px 35px;
   }
+  @media (min-width: $desktop-width) {
+    padding: 20px 55px;
+    .features__title {
+      margin: 21px 70px 14px;
+    }
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -164,6 +187,9 @@
     font-size: 21px;
     margin: 21px 20px 14px;
   }
+  @media (min-width: $desktop-width) {
+    margin: 21px 30px 14px;
+  }
 }
 
 .features__title-illustrated {
@@ -172,10 +198,6 @@
 
 .features__description {
   line-height: 21px;
-
-  @media (min-width: $tablet-width) {
-
-  }
 }
 
 .features__description::before {

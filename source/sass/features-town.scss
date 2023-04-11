@@ -17,6 +17,9 @@
     gap: 25px;
     text-align: center;
   }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
+  }
 }
 
 .features-town__item {
@@ -24,6 +27,9 @@
 
   @media (min-width: $tablet-width) {
     padding: 96px 20px 20px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 96px 40px 20px;
   }
 }
 
