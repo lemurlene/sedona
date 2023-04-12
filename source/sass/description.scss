@@ -3,6 +3,9 @@
   padding: 8px 20px;
   max-width: 485px;
   margin: auto;
+  @media (min-width: $tablet-width) {
+    padding: 20px;
+  }
 }
 
 .description__title {

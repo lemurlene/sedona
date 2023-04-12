@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 46px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 60px;
-    margin-left: 60px;
+    margin: 47px 60px;
   }
   @media (min-width: $desktop-width) {
     margin-right: 200px;
@@ -17,6 +17,7 @@
   margin-bottom: -45px;
   @media (min-width: $tablet-width) {
    margin-bottom: -93px;
+   height: 500px
   }
 }
 

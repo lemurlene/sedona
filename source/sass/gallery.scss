@@ -1,15 +1,27 @@
 .gallery__foto {
   display: grid;
+  margin-top: 17px;
 
    @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     padding-right: 60px;
     padding-left: 60px;
     justify-items: flex-start;
+    margin-top: 49px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
+  }
+}
+
+.gallery__video {
+  .description {
+    padding: 16px 35px 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 16px 15px 20px;
+    }
   }
 }

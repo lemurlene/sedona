@@ -45,11 +45,12 @@
 .control__button {
   border: none;
   cursor: pointer;
-  justify-content: flex-start;
   align-items: center;
   background-color: $grey_200;
   @media (min-width: $tablet-width) {
     background-color: rgba($black, 0.0);
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -61,10 +62,16 @@
   grid-area: subtitles;
   display: flex;
   justify-content: flex-end;
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
 }
 
 .control__button--fullscreen {
   grid-area: fullscreen;
+  @media (min-width: $tablet-width) {
+    justify-self: flex-start;
+  }
 }
 
 .control__button:hover .control__button-icon {

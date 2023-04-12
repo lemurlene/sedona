@@ -2,7 +2,7 @@
   display: grid;
   margin: 0;
   line-height: 24px;
-  padding: 22px 20px;
+  padding: 22px 20px 0;
   border-bottom: 1px solid $grey_300;
 
   @media (min-width: $tablet-width) {
@@ -18,15 +18,32 @@
   }
 }
 
+
+@media (min-width: $tablet-width) {
+  .foto__big-foto {
+    height: 400px;
+  }
+  .foto__small-foto {
+    height: 267px;
+  }
+}
+
+
+
 .foto__caption {
   font-weight: 700;
   color: $black;
-  padding-top: 15px;
+  padding-top: 9px;
+  display: grid;
+  grid-template-areas:
+          "caption"
+          "autor"
+          "likes";
 
   @media (min-width: $tablet-width) {
     background-color: $grey_200;
     padding: 15px 20px;
-    display: grid;
+
     align-items: center;
     grid-template-columns: 1fr 85px;
     grid-template-rows: repeat(2, 25px);
@@ -63,6 +80,8 @@
   text-transform: none;
   color: $grey_800;
   font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
   @media (min-width: $desktop-width) {
     color: $white;
   }
@@ -71,17 +90,18 @@
 .foto__likes {
   grid-area: likes;
   display: flex;
-  column-gap: 10px;
-  padding: 15px 15px 15px 0px;
+  column-gap: 14px;
+  padding: 11px 15px 15px 0px;
   border: none;
   cursor: pointer;
   justify-content: flex-start;
-  align-items: center;
+  align-items: baseline;
   color: inherit;
   background-color: rgba($black, 0.0);
 
   @media (min-width: $tablet-width) {
-    padding: 15px 0px 15px 15px;
+    padding: 20px 0px 15px 20px;
+    column-gap: 10px;
   }
 }
 
@@ -100,4 +120,7 @@
 .foto__likes-number {
   display: block;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
 }

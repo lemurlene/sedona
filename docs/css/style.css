@@ -888,6 +888,11 @@ a {
   max-width: 485px;
   margin: auto;
 }
+@media (min-width: 768px) {
+  .description {
+    padding: 20px;
+  }
+}
 
 .description__title {
   font-weight: 700;
@@ -1196,6 +1201,7 @@ a {
 
 .gallery__foto {
   display: grid;
+  margin-top: 17px;
 }
 @media (min-width: 768px) {
   .gallery__foto {
@@ -1203,6 +1209,7 @@ a {
     padding-right: 60px;
     padding-left: 60px;
     justify-items: flex-start;
+    margin-top: 49px;
   }
 }
 @media (min-width: 1200px) {
@@ -1212,11 +1219,20 @@ a {
   }
 }
 
+.gallery__video .description {
+  padding: 16px 35px 20px;
+}
+@media (min-width: 768px) {
+  .gallery__video .description {
+    padding: 16px 15px 20px;
+  }
+}
+
 .foto__figure {
   display: grid;
   margin: 0;
   line-height: 24px;
-  padding: 22px 20px;
+  padding: 22px 20px 0;
   border-bottom: 1px solid #e5e5e5;
 }
 @media (min-width: 768px) {
@@ -1234,16 +1250,25 @@ a {
   }
 }
 
+@media (min-width: 768px) {
+  .foto__big-foto {
+    height: 400px;
+  }
+  .foto__small-foto {
+    height: 267px;
+  }
+}
 .foto__caption {
   font-weight: 700;
   color: #000000;
-  padding-top: 15px;
+  padding-top: 9px;
+  display: grid;
+  grid-template-areas: "caption" "autor" "likes";
 }
 @media (min-width: 768px) {
   .foto__caption {
     background-color: #f2f2f2;
     padding: 15px 20px;
-    display: grid;
     align-items: center;
     grid-template-columns: 1fr 85px;
     grid-template-rows: repeat(2, 25px);
@@ -1281,6 +1306,8 @@ a {
   text-transform: none;
   color: #333333;
   font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 @media (min-width: 1200px) {
   .foto__author {
@@ -1291,19 +1318,21 @@ a {
 .foto__likes {
   grid-area: likes;
   display: flex;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  padding: 15px 15px 15px 0px;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+  padding: 11px 15px 15px 0px;
   border: none;
   cursor: pointer;
   justify-content: flex-start;
-  align-items: center;
+  align-items: baseline;
   color: inherit;
   background-color: rgba(0, 0, 0, 0);
 }
 @media (min-width: 768px) {
   .foto__likes {
-    padding: 15px 0px 15px 15px;
+    padding: 20px 0px 15px 20px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
 }
 
@@ -1323,17 +1352,20 @@ a {
 .foto__likes-number {
   display: block;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .video__player {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 46px;
 }
 @media (min-width: 768px) {
   .video__player {
-    margin-right: 60px;
-    margin-left: 60px;
+    margin: 47px 60px;
   }
 }
 @media (min-width: 1200px) {
@@ -1349,6 +1381,7 @@ a {
 @media (min-width: 768px) {
   .video__picture {
     margin-bottom: -93px;
+    height: 500px;
   }
 }
 
@@ -1431,13 +1464,14 @@ a {
 .control__button {
   border: none;
   cursor: pointer;
-  justify-content: flex-start;
   align-items: center;
   background-color: #f2f2f2;
 }
 @media (min-width: 768px) {
   .control__button {
     background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -1450,9 +1484,19 @@ a {
   display: flex;
   justify-content: flex-end;
 }
+@media (min-width: 768px) {
+  .control__button--subtitles {
+    justify-content: center;
+  }
+}
 
 .control__button--fullscreen {
   grid-area: fullscreen;
+}
+@media (min-width: 768px) {
+  .control__button--fullscreen {
+    justify-self: flex-start;
+  }
 }
 
 .control__button:hover .control__button-icon {
