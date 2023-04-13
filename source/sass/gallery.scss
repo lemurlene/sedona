@@ -15,13 +15,3 @@
     padding: 0;
   }
 }
-
-.gallery__video {
-  .description {
-    padding: 16px 35px 20px;
-
-    @media (min-width: $tablet-width) {
-      padding: 16px 15px 20px;
-    }
-  }
-}

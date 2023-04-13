@@ -1,3 +1,16 @@
+.video__description {
+  padding: 16px 35px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 15px 20px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 22px 15px 20px;
+  }
+}
+
+
+
 .video__player {
   display: flex;
   align-items: center;
@@ -10,6 +23,7 @@
   @media (min-width: $desktop-width) {
     margin-right: 200px;
     margin-left: 200px;
+    margin: 45px 200px 92px;
   }
 }
 
