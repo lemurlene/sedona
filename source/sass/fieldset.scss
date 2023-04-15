@@ -4,6 +4,9 @@
   color: $black;
   margin: auto;
   text-align: center;
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .fieldset__title--contacts {
@@ -22,15 +25,17 @@
     padding: 20px 60px;
   }
 
+  .fieldset__title--impression,
   .fieldset__title--introduce {
     padding: 20px 20px 20px 0;
     margin-left: 0;
+    margin-bottom: 16px;
   }
 }
 
 .fieldset__label {
   display: flex;
-  column-gap: 15px;
+  column-gap: 11px;
   align-items: center;
   cursor: pointer;
 }
@@ -73,6 +78,7 @@
 .fieldset__field--mail {
   background-repeat: no-repeat;
   background-position: right 20px top 50%, 0 0;
+  margin-top: 7px;
 
   @media (min-width: $desktop-width) {
     width: 316px;
@@ -81,6 +87,9 @@
 
 .fieldset__field--emotions {
   height: 160px;
+  margin-top: 14px;
+  margin-bottom: 43px;
+  padding: 14px 21px;
 }
 
 .fieldset__field--phone {
@@ -93,7 +102,8 @@
 
 .fieldset__list {
   list-style: none;
-  padding-left: 0px;
+  padding-left: 0;
+  margin: 18px 0;
 }
 
 .fieldset__list--visits {
@@ -108,5 +118,18 @@
 }
 
 .fieldset__item {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
+
+.fieldset__item-contacts {
+  margin-bottom: 12px;
+}
+
+.fieldset__item-impression {
+  margin-bottom: 9px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+  }
+}
+
+

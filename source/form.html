@@ -76,28 +76,32 @@
           <fieldset class="feedback__fieldset fieldset feedback__fieldset--contacts">
             <legend class="fieldset__title fieldset__title--contacts">Контактная информация:</legend>
 
-            <label class="fieldset__label fieldset__label--contacts" for="feedback-phone">
-              <span class="hide-show__hide-desktop">Контактный</span>телефон*:
-            </label>
-            <input class="fieldset__field fieldset__field--phone" type="tel" inputmode="tel" name="feedback-phone" id="feedback-phone" placeholder="Введите телефон" aria-label="Обязательное поле">
-
-            <label class="fieldset__label fieldset__label--contacts" for="feedback-mail">Электронная почта*:</label>
-            <input class="fieldset__field fieldset__field--mail" type="email" inputmode="email" name="feedback-mail" id="feedback-mail" placeholder="Введите e-mail" aria-label="Обязательное поле">
-
+            <ul class="fieldset__list">
+              <li class="fieldset__item-contacts">
+                <label class="fieldset__label fieldset__label--contacts" for="feedback-phone">
+                  <span class="hide-show__hide-desktop">Контактный</span>телефон*:
+                </label>
+                <input class="fieldset__field fieldset__field--phone" type="tel" inputmode="tel" name="feedback-phone" id="feedback-phone" placeholder="Введите телефон" aria-label="Обязательное поле">
+              </li>
+              <li class="fieldset__item-contacts">
+                <label class="fieldset__label fieldset__label--contacts" for="feedback-mail">Электронная почта*:</label>
+                <input class="fieldset__field fieldset__field--mail" type="email" inputmode="email" name="feedback-mail" id="feedback-mail" placeholder="Введите e-mail" aria-label="Обязательное поле">
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="feedback__fieldset fieldset feedback__fieldset--impression">
-            <legend class="fieldset__title fieldset__title--introduce">Ваше общее впечатление:</legend>
+            <legend class="fieldset__title fieldset__title--impression">Ваше общее впечатление:</legend>
             <ul class="fieldset__list">
-              <li class="fieldset__item selector">
+              <li class="fieldset__item-impression selector">
                 <input class="selector__input selector__input--radio" type="radio" name="impression" id="positive" checked value="Скорее положительное">
                 <label class="selector__label" for="positive">Скорее положительное</label>
               </li>
-              <li class="fieldset__item selector">
+              <li class="fieldset__item-impression selector">
                 <input class="selector__input selector__input--radio" type="radio" name="impression" id="negative" value="Скорее отрицательное">
                 <label class="selector__label" for="negative">Скорее отрицательное</label>
               </li>
-              <li class="fieldset__item selector">
+              <li class="fieldset__item-impression selector">
                 <input class="selector__input selector__input--radio" type="radio" name="impression" id="difficult" value="Затрудняюсь ответить">
                 <label class="selector__label" for="difficult">Затрудняюсь ответить</label>
               </li>

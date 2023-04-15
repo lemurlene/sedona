@@ -919,17 +919,21 @@ a {
 .feedback__description {
   padding: 22px 20px 18px;
 }
+@media (min-width: 768px) {
+  .feedback__description {
+    padding-top: 30px;
+  }
+}
 
 .feedback__form {
-  margin: 20px;
+  margin: 8px 20px 46px;
   display: grid;
-  row-gap: 30px;
+  row-gap: 8px;
 }
 @media (min-width: 768px) {
   .feedback__form {
-    margin: 60px;
+    margin: 25px 60px;
     grid-template-columns: 1fr 1fr;
-    row-gap: 50px;
   }
 }
 @media (min-width: 1200px) {
@@ -941,19 +945,20 @@ a {
 
 .feedback__fieldset {
   padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   border: none;
   position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .feedback__fieldset::before {
     position: absolute;
     content: "";
     height: 1px;
     background-color: #e5e5e5;
-    top: -60px;
+    top: -48px;
     left: -20px;
     right: -20px;
   }
@@ -976,6 +981,18 @@ a {
   }
 }
 
+.feedback__fieldset--visits::before {
+  top: -67px;
+}
+
+.feedback__fieldset--emotions::before {
+  top: -22px;
+}
+
+.feedback__fieldset--impression {
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
 @media (min-width: 768px) {
   .feedback__fieldset--impression {
     order: -1;
@@ -999,6 +1016,7 @@ a {
 @media (min-width: 768px) {
   .feedback__fieldset--introduce {
     margin-left: 58px;
+    margin-top: 12px;
   }
 }
 @media (min-width: 1200px) {
@@ -1027,6 +1045,11 @@ a {
   margin: auto;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .fieldset__title {
+    font-size: 21px;
+  }
+}
 
 .fieldset__title--contacts {
   margin-left: 20px;
@@ -1044,15 +1067,17 @@ a {
     width: 400px;
     padding: 20px 60px;
   }
+  .fieldset__title--impression,
   .fieldset__title--introduce {
     padding: 20px 20px 20px 0;
     margin-left: 0;
+    margin-bottom: 16px;
   }
 }
 .fieldset__label {
   display: flex;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
   align-items: center;
   cursor: pointer;
 }
@@ -1099,6 +1124,7 @@ a {
 .fieldset__field--mail {
   background-repeat: no-repeat;
   background-position: right 20px top 50%, 0 0;
+  margin-top: 7px;
 }
 @media (min-width: 1200px) {
   .fieldset__field--phone,
@@ -1109,6 +1135,9 @@ a {
 
 .fieldset__field--emotions {
   height: 160px;
+  margin-top: 14px;
+  margin-bottom: 43px;
+  padding: 14px 21px;
 }
 
 .fieldset__field--phone {
@@ -1121,7 +1150,8 @@ a {
 
 .fieldset__list {
   list-style: none;
-  padding-left: 0px;
+  padding-left: 0;
+  margin: 18px 0;
 }
 
 @media (min-width: 768px) {
@@ -1137,7 +1167,20 @@ a {
 }
 
 .fieldset__item {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.fieldset__item-contacts {
+  margin-bottom: 12px;
+}
+
+.fieldset__item-impression {
+  margin-bottom: 9px;
+}
+@media (min-width: 768px) {
+  .fieldset__item-impression {
+    margin-bottom: 17px;
+  }
 }
 
 .selector {
@@ -1147,13 +1190,14 @@ a {
 .selector__label {
   display: block;
   cursor: pointer;
-  padding: 17px 5px 17px 85px;
+  padding: 17px 5px 17px 77px;
   font-size: 18px;
   font-weight: 700;
   text-transform: none;
 }
 
 .selector__input {
+  margin-left: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
