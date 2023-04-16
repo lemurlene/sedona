@@ -9,14 +9,6 @@
   }
 }
 
-.fieldset__title--contacts {
-  margin-left: 20px;
-  @media (min-width: $tablet-width) {
-    margin: auto;
-  }
-}
-
-
 @media (min-width: $tablet-width) {
   .fieldset__title--contacts,
   .fieldset__title--visits,
@@ -30,6 +22,20 @@
     padding: 20px 20px 20px 0;
     margin-left: 0;
     margin-bottom: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset__title--impression {
+    margin-left: 80px;
+  }
+}
+
+.fieldset__title--contacts {
+  margin-left: 20px;
+  @media (min-width: $tablet-width) {
+    margin: auto;
+    margin-bottom: -15px;
   }
 }
 
@@ -90,14 +96,25 @@
   margin-top: 14px;
   margin-bottom: 43px;
   padding: 14px 21px;
+  @media (min-width: $tablet-width) {
+    margin-top: 36px;
+    margin-bottom: 50px;
+    padding: 18px 21px;
+  }
 }
 
 .fieldset__field--phone {
   background-image: url("../img/icon/phone.png"),linear-gradient(to left, $grey_400 58px, transparent 58px);
+  @media (min-width: $tablet-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .fieldset__field--mail {
   background-image: url("../img/icon/mail.png"),linear-gradient(to left, $grey_400 58px, transparent 58px);
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .fieldset__list {
@@ -109,11 +126,25 @@
 .fieldset__list--visits {
   @media (min-width: $tablet-width) {
     display: grid;
+    margin: 22px 40px 18px 98px;
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 7px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 45px;
+    margin: 21px 0 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset__list--contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 6px;
   }
 }
 
@@ -123,7 +154,12 @@
 
 .fieldset__item-contacts {
   margin-bottom: 12px;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    column-gap: 16px;
+  }
 }
+
 
 .fieldset__item-impression {
   margin-bottom: 9px;
@@ -131,5 +167,3 @@
     margin-bottom: 17px;
   }
 }
-
-

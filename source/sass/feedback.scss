@@ -3,6 +3,9 @@
   @media (min-width: $tablet-width) {
   padding-top: 30px;
   }
+  @media (min-width: $desktop-width) {
+  margin-top: 50px;
+  }
 }
 
 .feedback__form {
@@ -11,11 +14,11 @@
   row-gap: 8px;
 
   @media (min-width: $tablet-width) {
-    margin: 25px 60px;
+    margin: 25px 60px 70px;
     grid-template-columns: 1fr 1fr;
   }
   @media (min-width: $desktop-width) {
-    margin: 56px 120px 66px;
+    margin: 0 120px 74px;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -52,6 +55,9 @@
 }
 
 .feedback__fieldset--contacts {
+  @media (min-width: $tablet-width) {
+    margin-bottom: -5px;
+  }
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
@@ -62,9 +68,6 @@
 .feedback__fieldset--visits::before {
   top: -67px;
 }
-.feedback__fieldset--emotions::before {
-  top: -22px;
-}
 
  .feedback__fieldset--impression {
   margin-top: 12px;
@@ -74,6 +77,9 @@
     justify-content: start;
     position: relative;
   }
+  @media (min-width: $desktop-width) {
+    margin-top: 8px;
+  }
 }
 
 .feedback__fieldset--impression::after {
@@ -82,8 +88,8 @@
     content: "";
     width: 1px;
     background-color: $grey_450;
-    top: -30px;
-    bottom: 10px;
+    top: -62px;
+    bottom: 37px;
     right: 0;
   }
 }
@@ -95,10 +101,15 @@
   }
   @media (min-width: $desktop-width) {
     margin-left: 80px;
+    margin-top: 8px;
   }
 }
 
-
 .feedback-form__footnote {
-  text-align: end;
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+  }
 }

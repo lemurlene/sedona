@@ -76,7 +76,7 @@
           <fieldset class="feedback__fieldset fieldset feedback__fieldset--contacts">
             <legend class="fieldset__title fieldset__title--contacts">Контактная информация:</legend>
 
-            <ul class="fieldset__list">
+            <ul class="fieldset__list fieldset__list--contacts">
               <li class="fieldset__item-contacts">
                 <label class="fieldset__label fieldset__label--contacts" for="feedback-phone">
                   <span class="hide-show__hide-desktop">Контактный</span>телефон*:
@@ -130,13 +130,14 @@
             </ul>
           </fieldset>
 
-          <div class="feedback__fieldset fieldset feedback__fieldset--emotions">
-            <label class="fieldset__title fieldset__title--emotions" for="emotions-text">Опишите свои эмоции:</label>
+          <fieldset class="fieldset feedback__fieldset feedback__fieldset--emotions">
+            <legend  class="fieldset__title fieldset__title--emotions" aria-hidden="true">Опишите свои эмоции:</legend>
+            <label class="visually-hidden" for="emotions-text">Опишите свои эмоции:</label>
             <textarea class="fieldset__field fieldset__field--emotions" name="emotions-text" id="emotions-text" placeholder="Опишите подробно все свои восторги"></textarea>
-          </div>
+          </fieldset>
 
           <button class="button feedback-form__button" type="submit"><span class="button__text">Отправить отзыв</span></button>
-          <p class="feedback-form__footnote hide-show__hide-mobile" aria-hidden="true">* — обязательные поля</p>
+          <p class="feedback-form__footnote" aria-hidden="true">* — обязательные поля</p>
 
         </form>
       </main>
