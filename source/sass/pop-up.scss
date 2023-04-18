@@ -8,13 +8,16 @@
   box-shadow: 0px 7px 15px rgba($grey_900, 0.15);
 }
 
-.pop-up--error {
-  padding: 40px 42px 35px 42px;
+.pop-up_show {
+  display: block;
+}
 
+.pop-up--error {
+  padding: 34px 42px 35px 42px;
   @media (min-width: $tablet-width) {
     width: 400px;
     left: calc(50% - 200px);
-    padding: 35px 47px 50px 47px;
+    padding: 34px 47px 49px 47px
   }
 }
 
@@ -26,22 +29,26 @@
 }
 
 .description--sent {
-  padding: 30px 40px;
+  padding: 20px 40px 30px;
   @media (min-width: $tablet-width) {
     padding: 20px;
   }
 }
 
 .pop-up__button {
+  font-size: 18px;
   max-width: 180px;
-  margin-top: 26px;
+  margin-top: 23px;
   @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-top: 35px;
     max-width: 270px;
   }
 }
 
 .pop-up__button--sent {
   margin-top: 5px;
+  padding: 18px 10px 14px;
   max-width: 320px;
   border: 20px solid $grey_200;
   @media (min-width: $tablet-width) {
