@@ -14,9 +14,13 @@ fedbackForm.addEventListener("submit", function (evt) {
     fedbackError.classList.remove("pop-up_show");
     fedbackError.offsetWidth = fedbackError.offsetWidth;
     fedbackError.classList.add("pop-up_show");
+    fedbackName.classList.add("pop-up__border-error");
+    fedbackSurname.classList.add("pop-up__border-error");
+    fedbackPhone.classList.add("pop-up__border-error");
+    fedbackMail.classList.add("pop-up__border-error");
   } else {
     fedbackSent.classList.add("pop-up_show");
-    fedbackError.offsetWidth = fedbackError.offsetWidth;
+    fedbackSent.offsetWidth = fedbackSent.offsetWidth;
   }
 });
 

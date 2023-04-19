@@ -1671,6 +1671,10 @@ a {
   }
 }
 
+.pop-up__border-error {
+  border: 1px solid #ff0000;
+}
+
 @media (min-width: 768px) {
   .pop-up--sent {
     width: 640px;

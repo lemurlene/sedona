@@ -21,6 +21,10 @@
   }
 }
 
+.pop-up__border-error {
+  border: 1px solid $red_100;
+}
+
 .pop-up--sent {
   @media (min-width: $tablet-width) {
     width: 640px;
