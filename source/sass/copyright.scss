@@ -1,0 +1,8 @@
+
+.copyright:hover .copyright__icon {
+  fill: $blue_200;
+}
+
+.copyright:active .copyright__icon {
+  fill: rgba($blue_200, 0.3);
+}
