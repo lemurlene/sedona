@@ -1,0 +1,7 @@
+.feedback-form__button {
+  max-width: 480px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 324px;
+  }
+}

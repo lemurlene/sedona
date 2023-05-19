@@ -1,0 +1,36 @@
+.search {
+  text-align: center;
+}
+
+.search__caption {
+  padding-top: 12px;
+  font-size: 21px;
+  font-weight: 700;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.search__text {
+  line-height: 24px;
+  max-width: 435px;
+  margin: auto;
+}
+
+.search__button {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  max-width: 458px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 42px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 46px;
+    margin-bottom: 66px;
+  }
+}
