@@ -114,15 +114,26 @@
   }
 }
 
-.photo__likes--love {
-  color: $blue_400;
-}
-
 .photo__likes-icon {
   opacity: 0.3;
 
   @media (min-width: $desktop-width) {
     opacity: 1;
+  }
+}
+
+.photo__likes--love {
+  color: red;
+
+  .photo__likes-icon {
+    opacity: 1;
+  }
+}
+
+.photo__likes-icon--love {
+  .photo__likes-icon--fill,
+  .photo__likes-icon--stroke {
+    fill: $red_100;
   }
 }
 
