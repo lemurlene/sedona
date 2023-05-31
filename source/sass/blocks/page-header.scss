@@ -17,6 +17,13 @@
   }
 }
 
+@media (max-width: $mobile-width) {
+  .page-header__logo--js {
+    display: none;
+  }
+}
+
+
 @media (min-width: $desktop-width) {
   .page-header__logo-img {
     height: 96px;
